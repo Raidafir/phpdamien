@@ -1,0 +1,50 @@
+/* Style de la barre de navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333; /* Couleur de fond */
+}
+
+/* Style des éléments de la liste pour les afficher horizontalement */
+nav li {
+    float: left;
+}
+
+/* Style des liens */
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Changement de couleur des liens au survol */
+nav a:hover {
+    background-color: #111;
+}
+
+.header-link {
+    display: inline-block; /* ou 'inline' selon votre mise en page */
+    padding: 0;
+    margin: 0;
+    text-decoration: none; /* pour enlever le soulignement typique des liens */
+    color: inherit; /* pour garder la couleur de votre titre sans le changement de lien */
+    /* Ajoutez d'autres styles si nécessaire */
+}
+
+/* Réinitialisez les styles de la liste pour corriger le décalage si nécessaire */
+nav ul {
+    margin: 0;
+    padding: 0;
+    /* autres styles */
+}
+
+nav li {
+    display: inline-block; /* Assurez-vous que cela est cohérent avec votre mise en page horizontale */
+    margin-right: 20px; /* Ajustez l'espacement entre les éléments de la liste si nécessaire */
+    /* autres styles */
+}
+
