@@ -1,50 +1,65 @@
-/* Style de la barre de navigation */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333; /* Couleur de fond */
+/* Style global pour la barre de navigation avec Materialize */
+nav {
+    background-color: #333; /* Couleur de fond personnalisée */
 }
 
-/* Style des éléments de la liste pour les afficher horizontalement */
-nav li {
-    float: left;
-}
-
-/* Style des liens */
-nav a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+/* Style des liens dans la barre de navigation */
+nav .nav-wrapper a {
+    color: white; /* Couleur des liens */
 }
 
 /* Changement de couleur des liens au survol */
-nav a:hover {
+nav .nav-wrapper a:hover {
     background-color: #111;
 }
 
+/* Style du lien du titre (si utilisé) */
 .header-link {
     display: inline-block; /* ou 'inline' selon votre mise en page */
     padding: 0;
     margin: 0;
     text-decoration: none; /* pour enlever le soulignement typique des liens */
     color: inherit; /* pour garder la couleur de votre titre sans le changement de lien */
-    /* Ajoutez d'autres styles si nécessaire */
+}
+
+/* Style des éléments de liste dans la barre de navigation */
+nav .nav-wrapper ul li {
+    display: inline-block; /* Assurez-vous que cela est cohérent avec votre mise en page horizontale */
+    margin-right: 20px; /* Ajustez l'espacement entre les éléments de la liste si nécessaire */
 }
 
 /* Réinitialisez les styles de la liste pour corriger le décalage si nécessaire */
-nav ul {
+nav .nav-wrapper ul {
     margin: 0;
     padding: 0;
-    /* autres styles */
 }
 
-nav li {
-    display: inline-block; /* Assurez-vous que cela est cohérent avec votre mise en page horizontale */
-    margin-right: 20px; /* Ajustez l'espacement entre les éléments de la liste si nécessaire */
-    /* autres styles */
+.center-align {
+    text-align: center;
+}
+
+/* Pour les titres */
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    color: #00ff00; /* Vert fluo typique des écrans de terminal */
+    letter-spacing: 1px;
+}
+
+/* Pour le texte principal */
+body {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000; /* Fond noir pour le contraste */
+}
+
+/* Pour les éléments spécifiques liés au hacking */
+.code-style {
+    font-family: 'Orbitron', sans-serif;
+    color: #33ff33; /* Vert plus doux */
+    background-color: #000;
+    padding: 10px;
+    border-left: 3px solid #33ff33;
 }
 
