@@ -133,3 +133,17 @@ border: 2px solid white; /* Ajouter une bordure blanche autour de l'image */
     color: white; /* Couleur des liens - ajustez selon le style de votre en-tête */
     /* Autres styles pour les liens si nécessaire */
 }
+
+
+/* Style pour les champs de formulaire */
+input[type="text"], input[type="password"], input[type="email"] {
+    color: #ffffff; /* Couleur du texte */
+    background-color: #fff; /* Fond blanc pour les champs */
+    border: 1px solid #ccc; /* Bordure légère pour les champs */
+    padding: 5px; /* Un peu d'espacement interne */
+}
+
+/* Style pour les étiquettes des champs de formulaire */
+label {
+    color: #fff; /* Assurez-vous que les labels sont bien visibles */
+}

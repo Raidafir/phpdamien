@@ -9,6 +9,7 @@
     <meta charset="UTF-8">
     <title>Connexion - Raid Industries</title>
     <!-- Incluez votre fichier CSS ici si nécessaire -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
