@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col s12 center-align">
                 <a href="https://youtu.be/hPr-Yc92qaY">Conditions d'utilisation</a>
-                <p>&copy; <?php echo date("Y"); ?> Mafir Corporations</p>
+                <p>&copy; <?php echo date("Y"); ?> Raid Industries</p>
             </div>
         </div>
     </div>

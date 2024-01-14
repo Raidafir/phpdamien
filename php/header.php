@@ -10,28 +10,23 @@
 </head>
 <body>
 <header>
-
-    <nav class="nav-wrapper">
+<nav class="nav-wrapper">
         <div class="container">
-    
-            <a href="index.php" class="brand-logo">Raid Industries</a>
-    
-            <div id="login-icon">
-                <?php
-                 if (isset($_SESSION['user_id'])) {
-                    // Afficher la photo de profil
-                    echo '<img src="' . htmlspecialchars($_SESSION['profile_picture']) . '" alt="Profil" style="width:50px; height:50px;">'; // Assurez-vous que le chemin est correct
-                    // Ajouter un lien de déconnexion
-                    echo '<a href="logout.php"><i class="fas fa-sign-out-alt"></i> Déconnexion</a>';
-                } else {
-                    // Afficher les options de connexion et d'inscription
-                    echo '<a href=login.php><i class="fas fa-sign-in-alt"></i> Connexion</a>';
-                    echo '<a href=register.php><i class="fas fa-user-plus"></i> Créer un compte</a>';
-                }
-                ?>
-            </div>
+            <a href="index.php" class="brand-logo">Mafir Corporations</a>
         </div>
     </nav>
+
+    <div class="login-register-container">
+        <?php
+        if (isset($_SESSION['user_id'])) {
+            echo '<img src="' . htmlspecialchars($_SESSION['profile_picture']) . '" alt="Profil" class="circle responsive-img" style="width:50px; height:50px;">';
+            echo '<a href="logout.php">Déconnexion</a>';
+        } else {
+            echo '<a href="login.php">Connexion</a>';
+            echo '<a href="register.php">Créer un compte</a>';
+        }
+        ?>
+    </div>
 </header>
 </body>
 </html>

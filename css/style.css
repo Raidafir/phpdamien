@@ -10,7 +10,7 @@ nav .nav-wrapper a {
 
 /* Changement de couleur des liens au survol */
 nav .nav-wrapper a:hover {
-    background-color: #111;
+    background-color: #000000;
 }
 
 /* Style du lien du titre (si utilisé) */
@@ -38,28 +38,98 @@ nav .nav-wrapper ul {
     text-align: center;
 }
 
-/* Pour les titres */
-h1, h2, h3 {
+/* Styles pour les titres et le texte principal */
+body, h1, h2, h3, .code-style {
     font-family: 'Orbitron', sans-serif;
-    font-weight: bold;
-    color: #00ff00; /* Vert fluo typique des écrans de terminal */
-    letter-spacing: 1px;
+    color: #fff; /* Couleur blanche pour le texte */
+    background-color: #000; /* Fond noir pour le contraste */
 }
 
-/* Pour le texte principal */
-body {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 16px;
-    color: #fff;
-    background-color: #000; /* Fond noir pour le contraste */
+h1, h2, h3 {
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0 0 20px 0; /* Ajoute de l'espace en dessous des titres */
+}
+
+.page-deux h3 {
+    font-size: 50px;
+    color: #00ff00; /* Vert fluo typique des écrans de terminal */
+}
+
+.page-deux p {
+    font-size: 25px;
+    line-height: 1.5; /* Ajustez l'interligne pour l'espacement entre les lignes */
 }
 
 /* Pour les éléments spécifiques liés au hacking */
 .code-style {
-    font-family: 'Orbitron', sans-serif;
     color: #33ff33; /* Vert plus doux */
-    background-color: #000;
     padding: 10px;
     border-left: 3px solid #33ff33;
 }
 
+/* Style pour l'espacement et le centrage des éléments de la biographie */
+.bio-text, .flex-container {
+    margin: 20px 0; /* Espacement au-dessus et en dessous du texte */
+}
+
+.flex-container {
+    display: flex;
+    align-items: center; /* Centrage vertical */
+    justify-content: center; /* Centrage horizontal */
+    height: 100%; /* Donne une hauteur à la div pour le centrage vertical */
+}
+
+.texteraid {
+    margin-top: 10px;
+}
+/* Ajustement de l'espacement entre les éléments de la grille */
+.image-bio + .bio-text:not(.texteraid), .row + .row {
+    margin-top: 300px; /* Espacement entre les éléments de la grille et les blocs de texte */
+}
+
+/* Ajoute de l'espace au bas du conteneur sur la page 2 */
+.page-deux .container {
+margin-bottom: 60px;
+}
+
+/* Assurez-vous que les images ne se touchent pas avec le texte au-dessus */
+.image-bio {
+margin-bottom: 20px;
+}
+
+/* Style pour les liens de connexion et d'inscription */
+#nav-mobile li a {
+    color: white; /* Couleur du texte */
+    padding: 0 15px; /* Espacement autour du texte */
+    font-size: 16px; /* Taille de la police */
+}
+
+/* Style pour les icônes (si vous utilisez FontAwesome ou une autre bibliothèque d'icônes) */
+#nav-mobile li i {
+    margin-right: 5px; /* Espacement entre l'icône et le texte */
+}
+
+/* Style pour la photo de profil dans la barre de navigation */
+#nav-mobile li img.circle {
+margin-top: 5px; /* Aligner l'image avec le texte */
+border: 2px solid white; /* Ajouter une bordure blanche autour de l'image */
+}
+
+/* Style pour déplacer les liens vers le haut */
+#nav-mobile li a {
+    transform: translateY(-10px); /* Ajustez cette valeur selon vos besoins */
+}
+
+/* Style pour le conteneur des boutons de connexion/inscription */
+.login-register-container {
+    text-align: end; /* Centrer le contenu */
+    background-color: #333; /* Rendre l'arrière-plan transparent ou de la même couleur que le header */
+    /* Autres styles si nécessaire */
+}
+
+.login-register-container a {
+    margin: 0 10px; /* Espacement entre les liens */
+    color: white; /* Couleur des liens - ajustez selon le style de votre en-tête */
+    /* Autres styles pour les liens si nécessaire */
+}

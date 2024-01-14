@@ -1,3 +1,4 @@
+<head><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto+Mono&display=swap" rel="stylesheet">
 <?php
 // Démarrage de la session
 session_start();

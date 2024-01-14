@@ -1,6 +1,4 @@
-<head><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto+Mono&display=swap" rel="stylesheet">
-</head>
-
+<head><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto+Mono&display=swap" rel="stylesheet"></head>
 <?php 
 include 'php/header.php'; 
 include 'php/nav.php'; 
@@ -42,44 +40,41 @@ if ($result3->num_rows > 0) {
 
 $mysqli->close();
 ?>
-
-<div class="container">
-    <!-- Section pour la première image et son texte -->
-    <h3 class="center-align">Présentation de l'équipe</h3>
-    <div class="row">
-        <div class="col s12">
-            <img src="media\raid.png" alt="Image 1" class="responsive-img">
-            <div class="center-align"><p><?php echo $texte_bio1; ?></p></div>
+<body class="page-deux">
+    
+    <div class="container">
+        
+        <h3 class="center-align">Présentation de l'équipe</h3>
+        <div class="row">
+            <div class="col s12">
+                <img src="media/raid.png" alt="Image 1" class="responsive-img image-bio">
+                <div class="center-align bio-text texteraid"><p><?php echo $texte_bio1; ?></p></div>
+            </div>
+        </div>
+    
+     
+        <div class="row">
+            <div class="col s6">
+                <img src="media/nespo.png" alt="Image 2" class="responsive-img image-bio">
+            </div>
+            <div class="col s6 flex-container">
+                <div class="bio-text"><p><?php echo $texte_bio2; ?></p></div>
+            </div>
+        </div>
+    
+        
+        <div class="row">
+            <div class="col s6 flex-container">
+                <div class="bio-text"><p><?php echo $texte_bio3; ?></p></div>
+            </div>
+            <div class="col s6">
+                <img src="media/arai.png" alt="Image 3" class="responsive-img image-bio">
+            </div>
         </div>
     </div>
-
-    <!-- Section pour la deuxième image et son texte -->
-    <div class="row">
-        <div class="col s6">
-            <img src="media/nespo" alt="Image 2" class="responsive-img">
-        </div>
-        <div class="col s6">
-            <div><p><?php echo $texte_bio2; ?></p></div>
-        </div>
-    </div>
-
-    <!-- Section pour la troisième image et son texte -->
-    <div class="row">
-        <div class="col s6">
-            <div><p><?php echo $texte_bio3; ?></p></div>
-        </div>
-        <div class="col s6">
-            <img src="media/arai" alt="Image 3" class="responsive-img">
-        </div>
-    </div>
-</div>
-
 
 <?php include 'php/footer.php'; ?>
-
-<!-- Materialize JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
-</html>
 
 
