@@ -147,3 +147,30 @@ input[type="text"], input[type="password"], input[type="email"] {
 label {
     color: #fff; /* Assurez-vous que les labels sont bien visibles */
 }
+
+.profile-container {
+    position: relative;
+    display: inline-block; /* ou autre selon la mise en page */
+}
+
+.logout-link {
+    position: absolute;
+    top: 100%; /* Positionné juste en dessous de l'image */
+    right: 0; /* Aligné à droite de l'image */
+    background-color: #333; /* Fond blanc pour le lien */
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    display: none; /* Masqué par défaut */
+}
+/* Style pour le lien de déconnexion */
+.logout-link a {
+    white-space: nowrap; /* Pour empêcher le texte de passer à la ligne */
+}
+
+.logout-link a:hover {
+    background-color: #444; /* Légère variation de couleur au survol */
+}
+.profile-container {
+    z-index: 1000; /* Assurez-vous qu'il est suffisamment élevé pour être au-dessus des autres éléments */
+}
+
