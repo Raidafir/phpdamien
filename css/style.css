@@ -1,34 +1,34 @@
-/* Style global pour la barre de navigation avec Materialize */
+
 nav {
-    background-color: #333; /* Couleur de fond personnalisée */
+    background-color: #333; 
 }
 
-/* Style des liens dans la barre de navigation */
+
 nav .nav-wrapper a {
-    color: white; /* Couleur des liens */
+    color: white; 
 }
 
-/* Changement de couleur des liens au survol */
+
 nav .nav-wrapper a:hover {
     background-color: #000000;
 }
 
-/* Style du lien du titre (si utilisé) */
+
 .header-link {
-    display: inline-block; /* ou 'inline' selon votre mise en page */
+    display: inline-block; 
     padding: 0;
     margin: 0;
-    text-decoration: none; /* pour enlever le soulignement typique des liens */
-    color: inherit; /* pour garder la couleur de votre titre sans le changement de lien */
+    text-decoration: none; 
+    color: inherit; 
 }
 
-/* Style des éléments de liste dans la barre de navigation */
+
 nav .nav-wrapper ul li {
-    display: inline-block; /* Assurez-vous que cela est cohérent avec votre mise en page horizontale */
-    margin-right: 20px; /* Ajustez l'espacement entre les éléments de la liste si nécessaire */
+    display: inline-block; 
+    margin-right: 20px; 
 }
 
-/* Réinitialisez les styles de la liste pour corriger le décalage si nécessaire */
+
 nav .nav-wrapper ul {
     margin: 0;
     padding: 0;
@@ -38,139 +38,137 @@ nav .nav-wrapper ul {
     text-align: center;
 }
 
-/* Styles pour les titres et le texte principal */
+
 body, h1, h2, h3, .code-style {
     font-family: 'Orbitron', sans-serif;
-    color: #fff; /* Couleur blanche pour le texte */
-    background-color: #000; /* Fond noir pour le contraste */
+    color: #fff; 
+    background-color: #000; 
 }
 
 h1, h2, h3 {
     font-weight: bold;
     letter-spacing: 1px;
-    margin: 0 0 20px 0; /* Ajoute de l'espace en dessous des titres */
+    margin: 0 0 20px 0; 
 }
 
 .page-deux h3 {
     font-size: 50px;
-    color: #00ff00; /* Vert fluo typique des écrans de terminal */
+    color: #00ff00;
 }
 
 .page-deux p {
     font-size: 25px;
-    line-height: 1.5; /* Ajustez l'interligne pour l'espacement entre les lignes */
+    line-height: 1.5; 
 }
 
-/* Pour les éléments spécifiques liés au hacking */
+
 .code-style {
-    color: #33ff33; /* Vert plus doux */
+    color: #33ff33; 
     padding: 10px;
     border-left: 3px solid #33ff33;
 }
 
-/* Style pour l'espacement et le centrage des éléments de la biographie */
+
 .bio-text, .flex-container {
-    margin: 20px 0; /* Espacement au-dessus et en dessous du texte */
+    margin: 20px 0; 
 }
 
 .flex-container {
     display: flex;
-    align-items: center; /* Centrage vertical */
-    justify-content: center; /* Centrage horizontal */
-    height: 100%; /* Donne une hauteur à la div pour le centrage vertical */
+    align-items: center; 
+    justify-content: center; 
+    height: 100%; 
 }
 
 .texteraid {
     margin-top: 10px;
 }
-/* Ajustement de l'espacement entre les éléments de la grille */
+
 .image-bio + .bio-text:not(.texteraid), .row + .row {
-    margin-top: 300px; /* Espacement entre les éléments de la grille et les blocs de texte */
+    margin-top: 300px; 
 }
 
-/* Ajoute de l'espace au bas du conteneur sur la page 2 */
+
 .page-deux .container {
 margin-bottom: 60px;
 }
 
-/* Assurez-vous que les images ne se touchent pas avec le texte au-dessus */
+
 .image-bio {
 margin-bottom: 20px;
 }
 
-/* Style pour les liens de connexion et d'inscription */
+
 #nav-mobile li a {
-    color: white; /* Couleur du texte */
-    padding: 0 15px; /* Espacement autour du texte */
-    font-size: 16px; /* Taille de la police */
+    color: white; 
+    padding: 0 15px;
+    font-size: 16px; 
 }
 
-/* Style pour les icônes (si vous utilisez FontAwesome ou une autre bibliothèque d'icônes) */
+
 #nav-mobile li i {
-    margin-right: 5px; /* Espacement entre l'icône et le texte */
+    margin-right: 5px; 
 }
 
-/* Style pour la photo de profil dans la barre de navigation */
+
 #nav-mobile li img.circle {
-margin-top: 5px; /* Aligner l'image avec le texte */
-border: 2px solid white; /* Ajouter une bordure blanche autour de l'image */
+margin-top: 5px; 
+border: 2px solid white; 
 }
 
-/* Style pour déplacer les liens vers le haut */
+
 #nav-mobile li a {
-    transform: translateY(-10px); /* Ajustez cette valeur selon vos besoins */
+    transform: translateY(-10px); 
 }
 
-/* Style pour le conteneur des boutons de connexion/inscription */
+
 .login-register-container {
-    text-align: end; /* Centrer le contenu */
-    background-color: #333; /* Rendre l'arrière-plan transparent ou de la même couleur que le header */
-    /* Autres styles si nécessaire */
+    text-align: end; 
+    background-color: #333; 
 }
 
 .login-register-container a {
-    margin: 0 10px; /* Espacement entre les liens */
-    color: white; /* Couleur des liens - ajustez selon le style de votre en-tête */
-    /* Autres styles pour les liens si nécessaire */
+    margin: 0 10px; 
+    color: white; 
 }
 
 
-/* Style pour les champs de formulaire */
+
 input[type="text"], input[type="password"], input[type="email"] {
-    color: #ffffff; /* Couleur du texte */
-    background-color: #fff; /* Fond blanc pour les champs */
-    border: 1px solid #ccc; /* Bordure légère pour les champs */
-    padding: 5px; /* Un peu d'espacement interne */
+    color: #ffffff; 
+    background-color: #fff;
+    border: 1px solid #ccc; 
+    padding: 5px; 
 }
 
-/* Style pour les étiquettes des champs de formulaire */
+
 label {
-    color: #fff; /* Assurez-vous que les labels sont bien visibles */
+    color: #fff; 
 }
 
 .profile-container {
     position: relative;
-    display: inline-block; /* ou autre selon la mise en page */
+    display: inline-block; 
 }
 
 .logout-link {
     position: absolute;
-    top: 100%; /* Positionné juste en dessous de l'image */
-    right: 0; /* Aligné à droite de l'image */
-    background-color: #333; /* Fond blanc pour le lien */
+    top: 100%; 
+    right: 0; 
+    background-color: #333; 
     padding: 5px 10px;
     border: 1px solid #ccc;
-    display: none; /* Masqué par défaut */
+    display: none; 
 }
-/* Style pour le lien de déconnexion */
+
 .logout-link a {
-    white-space: nowrap; /* Pour empêcher le texte de passer à la ligne */
+    white-space: nowrap; 
 }
 
 .logout-link a:hover {
-    background-color: #444; /* Légère variation de couleur au survol */
+    background-color: #444; 
 }
 .profile-container {
-    z-index: 1000; /* Assurez-vous qu'il est suffisamment élevé pour être au-dessus des autres éléments */
+    z-index: 1000; 
 }
 

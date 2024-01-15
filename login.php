@@ -8,7 +8,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Connexion - Raid Industries</title>
-    <!-- Incluez votre fichier CSS ici si nécessaire -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -16,7 +15,7 @@
 <?php include 'php/header.php'; ?>
 <?php include 'php/nav.php'; ?>
 
-<!-- Formulaire de connexion -->
+
 <div id="login-container">
     <form action="process-login.php" method="post">
         <label for="username">Nom d'utilisateur:</label>
@@ -29,7 +28,7 @@
     </form>
 </div>
 
-<!-- Incluez votre pied de page/footer ici -->
+
 <?php include 'php/footer.php'; ?>
 
 </body>

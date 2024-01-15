@@ -6,7 +6,7 @@
 <?php include 'php/header.php'; ?>
 <?php include 'php/nav.php'; ?>
 <?php
-// Vous pouvez ajouter ici le code PHP pour gérer le processus d'inscription si nécessaire
+
 
 ?>
 
@@ -14,7 +14,6 @@
 <html>
 <head>
     <title>Inscription</title>
-    <!-- Ajoutez ici vos styles ou fichiers CSS si nécessaire -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
