@@ -33,9 +33,14 @@ $is_premium = isset($_SESSION['user_id']) && $_SESSION['Premium'];
         <?php if (!$is_premium): ?>
             <div class="premium-content-gif"></div>
         <?php else: ?>
-            <h2>Contenu Premium</h2>
-            <p>Ceci est le contenu exclusif pour les utilisateurs Premium.</p>
-        <?php endif; ?>
+            <h2>Bienvenue sur le contenu premium</h2>
+            <p>Les differents projet de Raid :</p>
+            <ul>
+             <li><a href="https://github.com/Raidafir/mtproxy"> Serveurs proxy Telegram</a></li>
+             <li><a href="https://github.com/Raidafir/Scanner-Nmap"> Scanner Nmap via Python</a></li>
+             <li><a href="https://github.com/Raidafir/phpdamien"> Projet de ce site</a></li>
+            </ul>
+        <?php endif; ?> 
     </div>
 
     <?php include 'php/footer.php'; ?>
