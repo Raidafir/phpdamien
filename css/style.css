@@ -57,7 +57,7 @@ h1, h2, h3 {
 }
 
 .page-deux p {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 1.5; 
 }
 
@@ -81,7 +81,7 @@ h1, h2, h3 {
 }
 
 .texteraid {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .image-bio + .bio-text:not(.texteraid), .row + .row {

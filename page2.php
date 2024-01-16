@@ -57,7 +57,7 @@ $mysqli->close();
             <div class="col s6">
                 <img src="media/nespo.png" alt="Image 2" class="responsive-img image-bio">
             </div>
-            <div class="col s6 flex-container"> // protection XSS
+            <div class="col s6 flex-container"> 
                 <div class="bio-text"><p><?php echo htmlspecialchars($texte_bio2, ENT_QUOTES, 'UTF-8'); ?></p></div>
             </div>
         </div>
